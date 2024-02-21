@@ -1,3 +1,4 @@
 <?php
 
-$BASE_URL = "http://" . $_SERVER['SERVER_NAME'] . dirname($_SERVER['REQUEST_URI'] . '?') . '/';
+$BASE_URL = "http://" . $_SERVER['SERVER_NAME'] . dirname($_SERVER['REQUEST_URI'] . '?') . '/';/*Ao chamar uma pasta diretamente sem a base URL no index.php, você pode encontrar problemas porque o roteamento pode depender da estrutura da URL para determinar qual controlador e ação deve ser acionado. Se você acessar diretamente uma pasta, a estrutura da URL pode não corresponder ao padrão esperado, e o roteamento pode não funcionar corretamente.
+Além disso, a base URL muitas vezes é usada para criar URLs absolutas para recursos, como arquivos CSS, JavaScript, imagens, etc. Se a base URL não estiver corretamente configurada, os links para esses recursos podem quebrar. */
