@@ -2,11 +2,11 @@
     include_once("templates/header.php");
 ?>
     <main>
-        <div id="title-conteiner">
+        <div id="title-container">
             <h1>Blog Codar</h1>
             <p>O seu blog de programação</p>
         </div>
-        <div id="pots-conteiner">
+        <div id="posts-container">
             <?php foreach($posts as $post): ?>
                 <div class="post-box">
                     <img src="<?= $BASE_URL ?>/img/<?= $post['img'] ?>" alt="<?= $post['title'] ?>">
