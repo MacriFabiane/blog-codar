@@ -211,3 +211,50 @@ footer{
     color:#FFF;
     padding: 30px 0;
 }
+
+/*MOBILE*/
+@media(max-width: 480px){/*quando ele for menor do que isso os estilos serão alterados*/
+    /*HOME*/
+    header{
+        width: 100%;
+    }
+
+    #logo{
+        display: block;
+        position: relative;
+        margin: 0 auto;
+        left: 0;
+        width: 50px;
+    }
+
+    #navbar{
+        display: none;
+    }
+
+    #title-container{
+        min-width: 100%;
+        margin-top: 20px;
+    }
+
+    #post-container{
+        margin-top: 20px;
+    }
+
+    .post-box{
+        flex: 100% 1 0;
+        padding: 15px;
+        margin: 0;
+    }
+
+    /*POSTS*/
+    #post-container{
+        grid-template-columns: 100%; /*colunas não são mais divididas*/
+        padding: 15px;
+        grid-template-areas: "main"
+        "sidebar"; /*fazer um enter outro significa q é pra um ficar embaixo do outro*/
+    }
+
+    .img-container img{
+        width: 100%;
+    }
+}
