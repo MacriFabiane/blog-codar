@@ -30,21 +30,21 @@
             Recusandae sit velit numquam expedita, beatae perspiciatis unde assumenda adipisci iste accusamus, odit molestiae blanditiis ex dignissimos porro aliquam. Voluptatem sint tempore, libero aspernatur corrupti eum nihil quas! Porro, eum.
             Reprehenderit vitae earum aliquid iure, corporis vero voluptates pariatur dolorum voluptas sed? Nostrum repellat autem deserunt perferendis enim magni, iusto provident iste repudiandae sed voluptatum ullam saepe placeat ut nisi?</p>
         </div>
+        <aside id="nav-container">
+            <h3 id="tags-title">Tags</h3>
+            <ul id="tag-list">
+                <?php foreach($currentPost['tags'] as $tag): ?>
+                    <li><a href="#"><?= $tag ?></a></li>
+                <?php endforeach; ?>
+            </ul>
+            <h3 id="categories-title">Categorias</h3>
+            <ul id="categories-list">
+                <?php foreach($categories as $category): ?>
+                    <li><a href="#"><?= $category ?></a></li>
+                <?php endforeach; ?>
+            </ul>
+        </aside>
     </main>
-    <aside id="nav-container">
-        <h3 id="tags-title">Tags</h3>
-        <ul id="tag-list">
-            <?php foreach($currentPost['tags'] as $tag): ?>
-                <li><a href="#"><?= $tag ?></a></li>
-            <?php endforeach; ?>
-        </ul>
-        <h3 id="categories-title">Categorias</h3>
-        <ul id="categories-list">
-            <?php foreach($categories as $category): ?>
-                <li><a href="#"><?= $category ?></a></li>
-            <?php endforeach; ?>
-        </ul>
-    </aside>
 <?php
     include_once("templates/footer.php");
 ?>
